@@ -1,0 +1,191 @@
+table {
+  border-collapse: collapse;
+  color: #333; /* 全体の文字色 */
+  background-color: #f0f2f7; /* 全体の背景色 */
+  width: 400px; /* 通常は400pxで表示 */
+  max-width: 100%; /* 画面に収まりきらないときは100%の幅に */
+  
+  
+}
+th, td {
+  text-align: center;
+  vertical-align:middle;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+h1 {
+  color:#006400;/*文字色*/
+  padding: 0.5em 0;/*上下の余白*/
+  border-top: solid 3px #008000;/*上線*/
+  border-bottom: solid 3px #008000;/*下線*/
+  text-align: center
+}
+
+.button {
+  display       : inline-block;
+  border-radius : 5%;          /* 角丸       */
+  font-size     : 12pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 12px 12px;   /* 余白       */
+  background    : #990000;     /* 背景色     */
+  color         : #ffffff;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  box-shadow    : 6px 6px 3px #666666;  /* 影の設定 */
+  border        : 2px solid #990000;    /* 枠の指定 */
+}
+.button:hover {
+  box-shadow    : none;        /* カーソル時の影消去 */
+  color         : #990000;     /* 背景色     */
+  background    : #ffffff;     /* 文字色     */
+}
+
+h2 {
+  color: #006400;/*文字色*/
+  padding: 0.5em;/*文字周りの余白*/
+  display: inline-block;/*おまじない*/
+  line-height: 1.3;/*行高*/
+  background: #dbebf8;/*背景色*/
+  vertical-align: middle;
+  border-radius: 25px 0px 0px 25px;/*左側の角を丸く*/
+}
+
+h2:before {
+  content: '●';
+  color: white;
+  margin-right: 8px;
+}
+
+h3 {
+  /*線の種類（実線） 太さ 色*/
+  border-bottom: solid 3px black;
+}
+
+span {
+    color: red;
+}
+
+
+
+.watermark {
+    /* Used to position the watermark */
+    position: relative;
+}
+
+.watermark__inner {
+    /* Center the content */
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    /* Absolute position */
+    left: 0px;
+    position: absolute;
+    top: 0px;
+
+    /* Take full size */
+    height: 100%;
+    width: 100%;
+}
+
+.watermark__body {
+    /* Text color */
+    color: #a9a9a9;
+
+    /* Text styles */
+    font-size: 10rem;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    /* Rotate the text */
+    transform: rotate(-45deg);
+
+    /* Disable the selection */
+    user-select: none;
+}
+
+.watermark__body2 {
+    /* Text color */
+    color: #ffb6c1;
+
+    /* Text styles */
+    font-size: 6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    /* Rotate the text */
+    transform: rotate(-45deg);
+
+    /* Disable the selection */
+    user-select: none;
+}
+
+.serch_button {
+  width: 5em;
+  height:3em;
+}
+
+.btn-primary {
+  display       : inline-block;
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 12px 12px;   /* 余白       */
+  background    : #007fff;     /* 背景色     */
+  color         : #ffffff;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  box-shadow    : 6px 6px 3px #666666;  /* 影の設定 */
+  border        : 2px solid #007fff;    /* 枠の指定 */
+}
+.button:hover {
+  box-shadow    : none;        /* カーソル時の影消去 */
+  color         : #007fff;     /* 背景色     */
+  background    : #ffffff;     /* 文字色     */
+}
+
+
+.button-danger {
+  display       : inline-block;
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 12px 12px;   /* 余白       */
+  background    : #ff0000;     /* 背景色     */
+  color         : #ffffff;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  box-shadow    : 6px 6px 3px #666666;  /* 影の設定 */
+  border        : 2px solid #ff0000;    /* 枠の指定 */
+}
+.button-danger:hover {
+  box-shadow    : none;        /* カーソル時の影消去 */
+  color         : #ff0000;     /* 背景色     */
+  background    : #ffffff;     /* 文字色     */
+}
+
+.serch_button {
+  display       : inline-block;
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 12px 12px;   /* 余白       */
+  background    : #006400;     /* 背景色     */
+  color         : #ffffff;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  box-shadow    : 6px 6px 3px #666666;  /* 影の設定 */
+  border        : 2px solid #006400;    /* 枠の指定 */
+}
+.serch_button:hover {
+  box-shadow    : none;        /* カーソル時の影消去 */
+  color         : #006400;     /* 背景色     */
+  background    : #ffffff;     /* 文字色     */
+}
+
+
+#price{
+  font-size: 1.8rem;
+}
+
+#rakuten_price{
+  color: blue;
+}
